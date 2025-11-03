@@ -1,101 +1,97 @@
-# 📚 Online Courses Data Analysis Dashboard (Power BI)
+# 🎓 Udemy Online Courses Dashboard
 
-This project presents an **interactive data analysis dashboard** built using **Microsoft Power BI** to evaluate the **performance, pricing, and content quality** of online courses.  
-
-The dashboard delivers **actionable insights** into subscriber behavior, content value perception, and subject popularity — helping to guide strategic decisions in **content creation and pricing**.
-
----
-
-## ✨ Project Structure & Key Analysis
-
-The dashboard is structured into **three main analytical pages**:
+## 🧩 Overview
+This Power BI dashboard provides analytical insights into Udemy's **online course performance**, including total courses, subscribers, reviews, pricing, and course distribution across subjects and difficulty levels.  
+It offers a high-level view of platform trends from **2012 to 2017**, helping identify popular subjects, top courses, and audience engagement patterns.
 
 ---
 
-### 1️⃣ Overview Page (Performance & Content)
-
-- **Key KPIs:**  
-  - 3,676 Courses  
-  - 147K Lectures  
-  - 574K Reviews  
-  - 11.7 Million Subscribers  
-
-- **Subject Popularity:**  
-  - *Web Development* dominates with **7.9M subscribers**, far exceeding other subjects.  
-
-- **📊 Critical Insight – Content Gap:**  
-  Although Web Development leads in subscribers, **Business Finance** has nearly the same number of courses.  
-  ➤ This highlights an inefficiency in content allocation — suggesting a **need to increase Web Development courses** to match learner demand.  
-
-- **Content Trends:**  
-  - Number of courses grew steadily until peaking in **2016 (1,204 courses)**, then slightly declined in 2017.  
-
-- **Drill-Down Feature:**  
-  Implemented **Hierarchy navigation** from Subject → Level (Beginner, Intermediate, Expert) → Course Details for deeper exploration.  
+## 🚀 Key Metrics
+| Metric | Value | Description |
+|--------|--------|-------------|
+| 🎥 **Courses** | **1,190** | Total number of courses analyzed. |
+| 📚 **Lectures** | **38,663** | Total lectures available across all courses. |
+| 💬 **Reviews** | **75,902** | Number of user reviews collected. |
+| 👥 **Subscribers** | **1,868,711** | Total enrolled students across all courses. |
+| 💵 **Max Price** | **$200.00** | Highest-priced course on the platform. |
+| 💲 **Min Price** | **$0.00** | Indicates availability of free courses. |
+| 💰 **Average Price** | **$68.70** | Average pricing across all courses. |
 
 ---
 
-### 2️⃣ Price Analysis Page (Value vs. Cost)
-
-- **Pricing Overview:**  
-  - **Max Price:** $200  
-  - **Min Price:** $0  
-  - **Average Price:** $66.1  
-
-- **Free vs. Paid Acceptance:**  
-  - **Lectures & Reviews:** Paid courses contain **95.5%** of total lectures and **77.01%** of reviews.  
-  - **Subscribers:** Paid courses still hold **69.49%** of subscribers — showing high **willingness to pay** for quality content.  
-
-- **💡 Insight – Value vs. Cost:**  
-  A deep dive using scatter and categorical analysis reveals that **price is not the main barrier** to subscription.  
-  - *Expensive courses (28.25%)* still attract large audiences, proving that **content quality and value outweigh pricing**.  
+## 🧠 Subscribers by Subject
+The **Business Finance** category dominates Udemy’s platform with approximately **1.9M subscribers**, highlighting strong learner demand for financial and investment-related education.
 
 ---
 
-### 3️⃣ Courses Details Page
+## 🧩 Courses by Subject and Level
+| Level | Courses | Description |
+|--------|----------|-------------|
+| All Levels | 692 | Majority of courses are designed for general audiences. |
+| Beginner | 339 | Courses for entry-level learners starting new skills. |
+| Intermediate | 128 | Targeted for learners with some prior experience. |
+| Expert | 31 | Advanced-level courses for professional learners. |
 
-A detailed table providing filtered insights based on selections from previous pages.  
-
-**Displayed Fields:**  
-- Subject  
-- Level (Beginner / Intermediate / Expert)  
-- Course Title  
-- Payment Type (Free / Paid)  
-- Price  
-
----
-
-## 💡 Key Business Insights & Recommendations
-
-1. **Increase Content for Popular Subjects:**  
-   Expand Web Development content to meet growing learner demand.  
-
-2. **Balance Course Distribution:**  
-   Optimize the number of courses across underperforming subjects to avoid content oversaturation.  
-
-3. **Pricing Strategy Optimization:**  
-   Maintain or slightly increase prices for high-value courses — data shows users are willing to pay for quality.  
-
-4. **Content Quality Emphasis:**  
-   Since reviews strongly influence subscriptions, focus on improving lecture depth and presentation.  
+The large number of “All Levels” courses suggests that most instructors aim to reach a wide range of learners.
 
 ---
 
-## 🛠️ Tools & Techniques
+## 📈 Courses by Year
+| Year | Courses Published |
+|-------|--------------------|
+| 2012 | 13 |
+| 2013 | 84 |
+| 2014 | 192 |
+| 2015 | 338 |
+| 2016 | 347 |
+| 2017 | 223 |
 
-- **Tool:** Microsoft Power BI Desktop  
-- **Data Transformation:** Power Query (M Language)  
-- **Custom Calculations:** DAX (Average Price, Min/Max, Subscriber Ratio, Review Percentage)  
-- **Visualization:** Donut Charts, Scatter Plots, Line Charts, Hierarchical Drill-Downs  
-- **Analysis Focus:** Course Performance, Pricing Sensitivity, Content Supply vs. Demand  
+Course creation grew rapidly between **2012 and 2016**, peaking in **2016** before a slight decline in 2017, reflecting market saturation or shifting instructor focus.
 
 ---
 
-## 📎 Project Type
-*Personal Learning Project | Data Analytics & Visualization Practice*
+## 🏆 Top 10 Courses (by Subscribers)
+| Rank | Course Name | Subscribers |
+|------|--------------|-------------|
+| 1️⃣ | Bitcoin or How I Learned to Stop Worrying | 66K |
+| 2️⃣ | Accounting in 60 Minutes | 57K |
+| 3️⃣ | Stock Market Investing for Beginners | 51K |
+| 4️⃣ | Introduction to Financial Modeling | 29K |
+| 5️⃣ | The Complete Financial Analyst Course | 24K |
+| 6️⃣ | Forex Basics | 22K |
+| 7️⃣ | Beginner to Pro in Excel Financial Modeling | 22K |
+| 8️⃣ | Black Algo Trading Build Your Own Robot | 20K |
+| 9️⃣ | Financial Analysis: A Recipe for Success | 20K |
+| 🔟 | Stock Market Foundations | 19K |
+
+These insights highlight the **popularity of finance, trading, and investment-related topics**, indicating where Udemy’s user demand is strongest.
 
 ---
 
-## 🔗 Repository Overview
-This repository includes screenshots and reports of the **Online Courses Dashboard** created in Power BI.  
-> *(Data used is simulated and intended for educational purposes only.)*
+## 💡 Insights Summary
+- **Business Finance** dominates all other categories in terms of subscribers.  
+- Majority of courses are **All Levels**, appealing to a broad range of learners.  
+- Course creation peaked in **2016**, showing rapid platform growth.  
+- **Top-performing courses** focus on Bitcoin, accounting, and investing — reflecting trending topics among learners.  
+- Pricing ranges from **free to $200**, with an **average price of $68.7**.  
+
+---
+
+## 🛠️ Tools & Technologies
+- **Power BI** – Data visualization and dashboard creation  
+- **Excel / CSV** – Data preprocessing and transformation  
+- **GitHub** – Project documentation and version control  
+
+---
+
+## 📸 Dashboard Preview
+![Udemy Courses Dashboard](./Overview.png)
+
+---
+
+## 📎 Author
+**Ibrahim Nady**  
+Data Analyst | Power BI Developer  
+📧 [ibrahimnady.abdelrahman@gmail.com]  
+🌐 [www.linkedin.com/in/ibrahim-nady-466b931b6]
+
